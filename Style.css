@@ -1,0 +1,437 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, #ff6b9d, #ffc0cb);
+    box-shadow: 0 2px 10px rgba(255, 107, 157, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 20px;
+}
+
+.logo {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.nav-links a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+/* Main Content */
+main {
+    margin-top: 80px;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #ffc0cb, #ffb6c1, #ffa0b1);
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-text {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Buttons Wrapper */
+.watch-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+/* Watch Button */
+.watch-btn {
+    background: linear-gradient(135deg, #ff6b9d, #d63384);
+    color: white;
+    padding: 22px 55px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 10px 25px rgba(255, 107, 157, 0.5);
+    transition: all 0.3s ease;
+}
+
+.watch-btn:hover {
+    background: linear-gradient(135deg, #d63384, #c2185b);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(255, 107, 157, 0.7);
+}
+
+/* Download Button */
+.download-btn {
+    background: linear-gradient(135deg, #4facfe, #007adf);
+    color: white;
+    padding: 22px 55px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    box-shadow: 0 10px 25px rgba(0, 122, 223, 0.5);
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover {
+    background: linear-gradient(135deg, #007adf, #005bb5);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 122, 223, 0.7);
+}
+
+/* Section Image */
+.career-image {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-image {
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(255, 107, 157, 0.3);
+    border: 4px solid #ff6b9d;
+    transition: transform 0.3s ease;
+}
+
+.section-image:hover {
+    transform: scale(1.05);
+}
+
+/* Personal Image */
+.personal-image {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.section-image-small {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(255, 107, 157, 0.3);
+    border: 4px solid #ff6b9d;
+    transition: transform 0.3s ease;
+}
+
+.section-image-small:hover {
+    transform: scale(1.05);
+}
+
+/* Sections */
+.section {
+    padding: 3rem 0;
+}
+
+.section.alternate {
+    background-color: #fdf2f8;
+}
+
+.section.conclusion {
+    background: linear-gradient(135deg, #ffc0cb, #ffb6c1);
+    color: white;
+}
+
+.section.conclusion p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.section h2 {
+    color: #d63384;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    border-left: 4px solid #ff6b9d;
+    padding-left: 1rem;
+}
+
+.section h3 {
+    color: #e91e63;
+    font-size: 1.5rem;
+    margin: 2rem 0 1rem 0;
+    border-bottom: 2px solid #ffc0cb;
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.section h4 {
+    color: #d63384;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.section p {
+    margin-bottom: 1.2rem;
+    font-size: 1.1rem;
+    text-align: justify;
+}
+
+.section strong {
+    color: #d63384;
+    font-weight: bold;
+}
+
+.section.conclusion h2 {
+    color: white;
+    border-left-color: white;
+}
+
+.section.conclusion strong {
+    color: #ffe4e1;
+}
+
+/* Income Grid */
+.income-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.income-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(255, 107, 157, 0.1);
+    border-left: 4px solid #ff6b9d;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.income-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(255, 107, 157, 0.2);
+}
+
+.income-item h4 {
+    margin-bottom: 1rem;
+    color: #d63384;
+}
+
+/* Achievements List */
+.achievements-list {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.achievements-list li {
+    background: white;
+    margin: 0.8rem 0;
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #ff6b9d;
+    box-shadow: 0 2px 10px rgba(255, 107, 157, 0.1);
+    font-size: 1.1rem;
+    position: relative;
+}
+
+.achievements-list li::before {
+    content: "✨";
+    position: absolute;
+    left: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff6b9d;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, #d63384, #ff6b9d);
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        gap: 1rem;
+    }
+    
+    .nav-links a {
+        padding: 0.3rem 0.8rem;
+        font-size: 0.9rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero-text {
+        font-size: 1rem;
+    }
+
+    .section h2 {
+        font-size: 1.6rem;
+    }
+
+    .income-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .achievements-list li::before {
+        left: -10px;
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Responsive buttons */
+    .watch-buttons {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .watch-btn,
+    .download-btn {
+        padding: 18px 40px;
+        font-size: 1.2rem;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .hero {
+        padding: 2rem 0;
+    }
+
+    .hero h1 {
+        font-size: 1.6rem;
+    }
+
+    .section {
+        padding: 2rem 0;
+    }
+
+    .section h2 {
+        font-size: 1.4rem;
+    }
+
+    .section h3 {
+        font-size: 1.2rem;
+    }
+
+    .watch-btn,
+    .download-btn {
+        padding: 15px 30px;
+        font-size: 1rem;
+        width: 90%;
+    }
+}
+
+/* Scroll Animation */
+.section {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ff6b9d;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #d63384;
+}
